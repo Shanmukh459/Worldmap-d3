@@ -1,11 +1,13 @@
-import { geoEqualEarth, geoPath } from "d3";
+import { geoGraticule, geoNaturalEarth1, geoPath } from "d3";
 
-const projection = geoEqualEarth();
+const projection = geoNaturalEarth1();
 const path = geoPath(projection);
+const graticules = geoGraticule()
 
 export const Marks = ({data:{land, interiors}}) => (
   <g className="marks">
     <path className="sphere" d={path({type:'Sphere'})} />
+    <path className="graticules" d={path(graticules())} />
     {land.features.map((feature) => (
       <path className="land" d={path(feature)} />
     ))}
