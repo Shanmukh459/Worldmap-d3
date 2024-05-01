@@ -1,8 +1,16 @@
-# React + Vite
+# World Map using React and D3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- This project draws a world map
+- The dataset is derived from Natural earth organization
+- The pacckage used to get this data is [_World Atlas_](https://unpkg.com/world-atlas@2.0.2/countries-50m.json)
+- Topojson package is used to parse the geojson data
 
-Currently, two official plugins are available:
+## Tech Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- D3
+- Topojson
+
+## Screenshot
+
+
