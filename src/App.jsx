@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useData } from "./useData";
-import { geoEqualEarth, geoPath } from "d3";
+import { Marks } from "./Marks";
 
 const height = 500;
 const width = 960;
-
-const projection = geoEqualEarth();
-const path = geoPath(projection);
 
 function App() {
   const data = useData();
@@ -14,12 +11,10 @@ function App() {
   if (!data) {
     return <h1>Loading...</h1>;
   }
-  
+
   return (
     <svg height={height} width={width}>
-      {data.features.map((feature) => (
-        <path d={path(feature)} />
-      ))}
+      <Marks data={data} />
     </svg>
   );
 }
