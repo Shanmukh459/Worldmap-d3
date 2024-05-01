@@ -1,4 +1,13 @@
-.marks {
+.marks .land {
   fill: #137b80;
+}
+
+.marks .sphere {
+  fill: #d9d9d9;
+}
+
+.marks .interiors {
+  fill: none;
   stroke: #1caab2;
 }
+
